@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="css/table.css">
+        <meta charset="utf-8">
+</head>
+<body>
+ <table>
+  <tr>
+    <th>Bank</th>
+    <th>Card Number</th>
+    <th>Expiry date</th>
+  </tr>
+   <tr>
+    <td> <input id="bankText" type="text" name="Bank"></td>
+    <td> <input id="cardText" type="text" name="CardNumber"></td>
+    <td> <input id="expiryText" type="text" name="ExpiryDate"></td>
+    <td> <button id="cardBtn">Add Card</button> </td>
+  </tr>
+ </table>
+ <input type="file" multiple onchange="processSelectedFiles(this)"><br>
+ <button id="getDataBtn">Get Data</button>
+ <div id="container"></div>
+
+ <script src="scripts/getData.js"></script>
+ <script src="scripts/tableOperations.js"></script>
+</body>
+
+</html>
